@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Applied Mathematics CGPA Calculator for Dhaka University.">
+    <title>Applied Mathematics CGPA Calculator</title>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Applied Mathematics CGPA Calculator",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "All"
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.jpg.jpeg" alt="AM Logo" class="logo-img">
+                <span class="logo-text">CGPA Calc</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#grading">Grading System</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Applied Mathematics CGPA Calculator</h1>
+            <p>The smartest and fastest CGPA calculator, designed with detailed marks input for maximum precision.</p>
+            <a href="#calculator" class="cta-button">Start Calculating</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="calculator" class="calculator-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>CGPA Calculator</h2>
+                    <p>Enter your course details below. You can enter just Credits and Grades, or fill in the exact marks for precise calculation.</p>
+                </div>
+                
+                <div class="calc-card">
+                    <div class="calc-controls">
+                        <button id="toggle-view-btn" class="secondary-btn">Compact View</button>
+                        <button id="add-year-btn" class="secondary-btn">Add Year</button>
+                        <button id="clear-all-btn" class="danger-btn">Clear All</button>
+                    </div>
+
+                    <div id="years-container">
+                        <!-- Years will be injected here via JS -->
+                    </div>
+
+                    <div class="results-panel">
+                        <div class="result-box">
+                            <span class="result-label">Total Credits</span>
+                            <span id="total-credits" class="result-value">0</span>
+                        </div>
+                        <div class="result-box highlighted">
+                            <span class="result-label">Cumulative GPA</span>
+                            <span id="final-cgpa" class="result-value">0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="grading" class="grading-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>DU Grading System</h2>
+                    <p>Reference table for Dhaka University's official grading scale.</p>
+                </div>
+                <div class="table-container">
+                    <table class="grading-table">
+                        <thead>
+                            <tr>
+                                <th>Numerical Grade</th>
+                                <th>Letter Grade</th>
+                                <th>Grade Point</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>80% and above</td><td>A+</td><td>4.00</td></tr>
+                            <tr><td>75% to less than 80%</td><td>A</td><td>3.75</td></tr>
+                            <tr><td>70% to less than 75%</td><td>A-</td><td>3.50</td></tr>
+                            <tr><td>65% to less than 70%</td><td>B+</td><td>3.25</td></tr>
+                            <tr><td>60% to less than 65%</td><td>B</td><td>3.00</td></tr>
+                            <tr><td>55% to less than 60%</td><td>B-</td><td>2.75</td></tr>
+                            <tr><td>50% to less than 55%</td><td>C+</td><td>2.50</td></tr>
+                            <tr><td>45% to less than 50%</td><td>C</td><td>2.25</td></tr>
+                            <tr><td>40% to less than 45%</td><td>D</td><td>2.00</td></tr>
+                            <tr><td>Less than 40%</td><td>F</td><td>0.00</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Applied Mathematics CGPA Calc</div>
+                <p>&copy; 2026 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
